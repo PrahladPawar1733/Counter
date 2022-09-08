@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+ background: url("../image/teahub.io-gradient-wallpaper-358582.jpg") no-repeat center bottom/cover;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+    /* background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%); */
+
+}
+.main__header{
+    height: 30vh;
+    display: flex;
+    align-items: center;
+}
+.title{
+    height: 10vh;
+    width: 40vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.main__content{
+     height: 50vh;
+     width: 30vw;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+    
+}
+.main__footer{
+    height: 20vh;
+    display: flex;
+    align-items: center;
+}
+.container {
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+    background: inherit;
+    overflow: hidden;
+}
+
+.container:before {
+    content: "";
+    position: absolute;
+    background: inherit;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+    filter: blur(10px);
+    margin: -20px;
+}
+.container:hover{
+     box-shadow: 0 0 2000px 0 rgba(0, 0, 0, .2);
+     border-radius: 10px;
+     position: relative;
+     z-index: 1;
+     background: inherit;
+     overflow: hidden;
+}
+.main__content__el{
+    margin-top: 30px;
+}
+
+
+.button-30 {
+    align-items: center;
+    appearance: none;
+    background-color: #4159d085;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    border-radius: 4px;
+    border-width: 0;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e778 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: #000000;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: 'Quicksand',
+    sans-serif;
+    height: 40px;
+    width: 150px;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 16px;
+    padding-right: 16px;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow .15s, transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow, transform;
+    font-size: 18px;
+    border: none;
+}
+
+.button-30:focus {
+    box-shadow: #d6d6e77e 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e772 0 -3px 0 inset;
+}
+
+.button-30:hover {
+    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e767 0 -3px 0 inset;
+    transform: translateY(-2px);
+}
+
+.button-30:active {
+    box-shadow: #d6d6e777 0 3px 7px inset;
+    transform: translateY(2px);
+}
+#counter{
+    font-size: 5em;
+    font-family: 'Quicksand',
+    sans-serif;
+}
+.title{
+    font-size: 2.2em;
+    font-family: 'Quicksand',sans-serif;
+}
+.footer__copy, .footer, #saved-el{
+     font-family: 'Quicksand',
+     sans-serif;
+}
